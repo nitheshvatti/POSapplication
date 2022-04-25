@@ -25,7 +25,6 @@ public class Card extends PaymentMethod{
 
   @Override
   Transaction processPayment() {
-    //print status
     System.out.println("Please enter your pin: ");
     pin = scanner.nextLine();
     merchant.setAccountBalance(merchant.getAccountBalance()+amount);
@@ -37,7 +36,6 @@ public class Card extends PaymentMethod{
   }
 
   private void getCardDetails() {
-    //input
     System.out.println("Please enter card number: ");
     cardNumber = scanner.nextLine();
     System.out.println("Please enter expiry date: ");
