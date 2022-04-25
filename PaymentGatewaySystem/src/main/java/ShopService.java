@@ -7,7 +7,6 @@ public class ShopService {
   public static void main(String[] args) {
     List<Transaction> transactionList = new ArrayList<>();
     Merchant merchant = getMerchantDetails();
-    //merchant details
       while (true) {
         System.out.println("1: Initiate transaction \n2: View transactions \n3: View account balance \n4: exit ");
         switch (scanner.nextInt()) {
