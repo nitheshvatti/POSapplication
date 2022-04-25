@@ -19,7 +19,6 @@ public class Upi extends PaymentMethod{
 
   @Override
   Transaction processPayment() {
-    //print status
     System.out.println("Please enter your upi pin: ");
     upiPin = scanner.nextLine();
     merchant.setAccountBalance(merchant.getAccountBalance()+amount);
@@ -31,7 +30,6 @@ public class Upi extends PaymentMethod{
   }
 
   private void getCardDetails() {
-    //input
     System.out.println("Please enter Upi ID: ");
     upiId = scanner.nextLine();
   }
